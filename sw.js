@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_NAME = 'elevor360d-aurora-static-v1-ads';
+const CACHE_NAME = 'elevor360d-aurora-static-v1-1-ads';
 const PREFIX = 'elevor360d-aurora-static-';
 const OFFLINE_FILES = ['./','./index.html','./style.css?v=aurora1ads','./app.js?v=aurora1ads','./manifest.webmanifest','./icon.svg','./venues.json','./information.json?v=aurora1ads','./advert-settings.json','./share-qr.png','./advertising.js?v=aurora1ads','./ad-config.json','./advertising/adverts.json','./advertising/images/elevor360d-promo.jpg'];
 self.addEventListener('install',event => event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(OFFLINE_FILES)).then(() => self.skipWaiting())));
